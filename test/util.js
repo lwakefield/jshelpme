@@ -1,5 +1,5 @@
 import Chai from 'chai';
-import Util from '../src/index.js';
+import Util from '../src/util';
 
 let should = Chai.should();
 let expect = Chai.expect;
