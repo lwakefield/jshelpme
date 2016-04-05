@@ -1,6 +1,6 @@
 {
     "name": "jshelpme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Some extended dot syntax functionality for Objects",
     "main": "index.js",
     "scripts": {
