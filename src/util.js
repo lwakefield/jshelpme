@@ -69,7 +69,7 @@ export default class Util {
     static objectSet(obj, key, val) {
         let path = key.split('.');
 
-        let currObj = obj;
+        let currObj = obj ? obj : {};
         while (path.length) {
             let firstKey = path.shift();
             if (path.length === 0) {
@@ -98,6 +98,7 @@ export default class Util {
      * @return {Object} the deeply nested property
      */
     static objectGet(obj, key, defaultVal=undefined) {
+        if (!obj) return defaultVal;
         let path = key.split('.');
 
         let currObj = obj;
