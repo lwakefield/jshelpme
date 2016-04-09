@@ -142,5 +142,6 @@ objectSet(foo, 'my.deeply.nested.property', 'hello world');
 ## Changelog
 
 ```
+1.0.4 objectGet({foo: 1, bar: 2}, '') will return the original object
 1.0.3 Added objectOnly
 ```

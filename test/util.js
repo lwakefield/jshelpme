@@ -110,6 +110,15 @@ describe('#objectGet', () => {
         expect(Util.objectGet(obj, 'one.three', 'three'))
             .to.deep.equal('three');
     });
+    it('gets empty key', () => {
+        let obj = {
+            one: {
+                two: 'hello world'
+            }
+        };
+        expect(Util.objectGet(obj, ''))
+            .to.deep.equal(obj);
+    });
 });
 
 describe('#objectOnly', () => {

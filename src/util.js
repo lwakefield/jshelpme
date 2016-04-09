@@ -67,6 +67,10 @@ export default class Util {
      * @return undefined
      */
     static objectSet(obj, key, val) {
+        if (!key.trim()) {
+            throw new Error('Trying to set an empty property on an object. Use obj = newVal instead.')
+        }
+
         let path = key.split('.');
 
         let currObj = obj ? obj : {};
@@ -99,6 +103,7 @@ export default class Util {
      */
     static objectGet(obj, key, defaultVal=undefined) {
         if (!obj) return defaultVal;
+        if (!key.trim()) return obj;
         let path = key.split('.');
 
         let currObj = obj;
