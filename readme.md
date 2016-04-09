@@ -1,6 +1,6 @@
 # jshelpme
 
-This package is largely inspired by [Laravel's helper methods](https://laravel.com/docs/5.2/helpers) `array_dot`, `array_get` and `array_set`.
+This package is largely inspired by [Laravel's helper methods](https://laravel.com/docs/5.2/helpers) `array_dot`, `array_get` and `array_set`, `object_only`.
 
 ## tl;dr
 
@@ -93,6 +93,25 @@ objectSet(foo, 'my.deeply.nested.property', 'hello world');
  */
  objectSet(obj, key, val) 
 ```
+### objectOnly
+```
+/**
+ * Given some keys, this function returns a copy of the original object with
+ * only those keys set. 
+ * This function handles dot notation.
+ * If a key doesn't exist, it will be set as undefined in the resulting 
+ * object
+ *
+ * let a = {one: 'a', two: 'b', three: 'c'}
+ * objectOnly(a, ['one', 'three']) == {one: 'a', three:'c'}
+ *
+ * @param {Object} obj object to get val from
+ * @param {Array} keys keys in dot notation
+ * @return {Object} the resulting object
+ */
+ objectOnly(obj, keys)
+```
+
 
 ### objectDotify
 ```
@@ -118,4 +137,10 @@ objectSet(foo, 'my.deeply.nested.property', 'hello world');
  *  @return {Boolean}
  */
  objectsEqual(obj1, obj2)
+```
+
+## Changelog
+
+```
+1.0.3 Added objectOnly
 ```
