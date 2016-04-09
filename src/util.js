@@ -112,16 +112,43 @@ export default class Util {
             currObj = currObj[firstKey];
         }
     }
+
+    /**
+     * Given some keys, this function returns a copy of the original object with
+     * only those keys set. 
+     * This function handles dot notation.
+     * If a key doesn't exist, it will be set as undefined in the resulting 
+     * object
+     *
+     * let a = {one: 'a', two: 'b', three: 'c'}
+     * objectOnly(a, ['one', 'three']) == {one: 'a', three:'c'}
+     *
+     * @param {Object} obj object to get val from
+     * @param {Array} keys keys in dot notation
+     * @return {Object} the resulting object
+     */
+    static objectOnly(obj, keys) {
+        let newObj = {};
+
+        for (let key of keys) {
+            let val = this.objectGet(obj, key);
+            this.objectSet(newObj, key, val);
+        }
+        return newObj;
+    }
+
 }
 
 let objectDotify = Util.objectDotify;
 let objectsEqual = Util.objectsEqual;
 let objectSet = Util.objectSet;
 let objectGet = Util.objectGet;
+let objectOnly = Util.objectOnly;
 export { 
     objectDotify,
     objectsEqual,
     objectSet,
-    objectGet
+    objectGet,
+    objectOnly
 };
 

@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'https://github.com/lwakefield/jshelpme.git' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 warn package.json jshelpme@1.0.0 No repository field.
+5 warn package.json jshelpme@1.0.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'https://github.com/lwakefield/jshelpme.git', null ]
+8 verbose cache add name=undefined spec="https://github.com/lwakefield/jshelpme.git" args=["https://github.com/lwakefield/jshelpme.git",null]
+9 verbose parsed url { protocol: 'https:',
+9 verbose parsed url   slashes: true,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: 'github.com',
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: 'github.com',
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: '/lwakefield/jshelpme.git',
+9 verbose parsed url   path: '/lwakefield/jshelpme.git',
+9 verbose parsed url   href: 'https://github.com/lwakefield/jshelpme.git' }
+10 silly lockFile 9cb07bfd-thub-com-lwakefield-jshelpme-git https://github.com/lwakefield/jshelpme.git
+11 verbose lock https://github.com/lwakefield/jshelpme.git /Users/lawrence/.npm/9cb07bfd-thub-com-lwakefield-jshelpme-git.lock
+12 verbose addRemoteTarball [ 'https://github.com/lwakefield/jshelpme.git', null ]
+13 info retry fetch attempt 1 at 09:44:20
+14 verbose fetch to= /var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git
+15 http GET https://github.com/lwakefield/jshelpme.git
+16 http 200 https://github.com/lwakefield/jshelpme.git
+17 verbose tar unpack /var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git
+18 silly lockFile 5a784719-m-lwakefield-jshelpme-git-unpack tar:///var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git-unpack
+19 verbose lock tar:///var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git-unpack /Users/lawrence/.npm/5a784719-m-lwakefield-jshelpme-git-unpack.lock
+20 silly lockFile 7bba804f-thub-com-lwakefield-jshelpme-git tar:///var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git
+21 verbose lock tar:///var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git /Users/lawrence/.npm/7bba804f-thub-com-lwakefield-jshelpme-git.lock
+22 silly gunzTarPerm modes [ '755', '644' ]
+23 error not a package /var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git
+24 silly lockFile 5a784719-m-lwakefield-jshelpme-git-unpack tar:///var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git-unpack
+25 silly lockFile 5a784719-m-lwakefield-jshelpme-git-unpack tar:///var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git-unpack
+26 silly lockFile 7bba804f-thub-com-lwakefield-jshelpme-git tar:///var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git
+27 silly lockFile 7bba804f-thub-com-lwakefield-jshelpme-git tar:///var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git
+28 silly lockFile 9cb07bfd-thub-com-lwakefield-jshelpme-git https://github.com/lwakefield/jshelpme.git
+29 silly lockFile 9cb07bfd-thub-com-lwakefield-jshelpme-git https://github.com/lwakefield/jshelpme.git
+30 error Error: ENOENT, open '/var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git-unpack/package.json'
+31 error If you need help, you may report this *entire* log,
+31 error including the npm and node versions, at:
+31 error     <http://github.com/npm/npm/issues>
+32 error System Darwin 15.0.0
+33 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "https://github.com/lwakefield/jshelpme.git"
+34 error cwd /Users/lawrence/Desktop/jshelpme/test_install
+35 error node -v v0.10.40
+36 error npm -v 1.4.28
+37 error path /var/folders/nq/gtd_frf56y95ys3l8mv5n3600000gn/T/npm-26450-HG9BpzI8/github.com/lwakefield/jshelpme.git-unpack/package.json
+38 error code ENOENT
+39 error errno 34
+40 verbose exit [ 34, true ]
